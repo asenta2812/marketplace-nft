@@ -52,7 +52,7 @@ const useEth = (): UseEthType => {
       webRef.current = web3;
     }
     if (!networkIDRef.current) {
-      const networkID = await webRef.current.eth.net.getId();
+      const networkID = await webRef.current.eth.getChainId();
       networkIDRef.current = networkID;
     }
     // const accounts = await webRef.current.eth.getAccounts();

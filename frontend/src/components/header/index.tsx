@@ -31,11 +31,7 @@ const Header = () => {
         },
         {
           label: (
-            <Typography.Text
-              copyable={{ text: accounts[0] }}
-              ellipsis
-              style={{ width: 150 }}
-            ></Typography.Text>
+            <Typography.Text ellipsis style={{ width: 150 }}></Typography.Text>
           ),
           key: '2',
           icon: <WalletOutlined />,
@@ -56,7 +52,10 @@ const Header = () => {
             <Button
               icon={
                 <WalletOutlined
-                  style={{ fontSize: 20, verticalAlign: 'top' }}
+                  style={{
+                    fontSize: 20,
+                    verticalAlign: 'top',
+                  }}
                 />
               }
               size="large"
